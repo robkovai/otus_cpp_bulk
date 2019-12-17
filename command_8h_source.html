@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Otus homework bulk: Исходный файл command.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Otus homework bulk
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">command.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="command_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="command_8h.html#a21e038f5b8958e203d28bc4f18472352">   15</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="command_8h.html#a21e038f5b8958e203d28bc4f18472352">CommandType</a> {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="command_8h.html#a21e038f5b8958e203d28bc4f18472352aee97be03cb04119af45014d815621ce1">Command</a>,</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="command_8h.html#a21e038f5b8958e203d28bc4f18472352abf3db33368c5d60a27dce0e4fd5b2965">StartBracket</a>,</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="command_8h.html#a21e038f5b8958e203d28bc4f18472352a83db51dfd13d30c9dbc6482b8dc21049">FinishBracket</a>,</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="command_8h.html#a21e038f5b8958e203d28bc4f18472352a87557f11575c0ad78e4e28abedc13b6e">End</a></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structCommand.html">   25</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structCommand.html">Command</a> {</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structCommand.html#afd23b7e189739dbae6c0f2e93ba02c81">   26</a></span>&#160;    <a class="code" href="command_8h.html#a21e038f5b8958e203d28bc4f18472352">CommandType</a> <a class="code" href="structCommand.html#afd23b7e189739dbae6c0f2e93ba02c81">type</a>;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structCommand.html#a8d66550a9895cbd96373a9a221fa2b25">   27</a></span>&#160;    std::string <a class="code" href="structCommand.html#a8d66550a9895cbd96373a9a221fa2b25">name</a>;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structCommand.html#ad1b8a0f70bd4e619a4a6aeef84868dac">   28</a></span>&#160;    <a class="code" href="structCommand.html#ad1b8a0f70bd4e619a4a6aeef84868dac">Command</a>(<a class="code" href="command_8h.html#a21e038f5b8958e203d28bc4f18472352">CommandType</a> type = <a class="code" href="command_8h.html#a21e038f5b8958e203d28bc4f18472352aee97be03cb04119af45014d815621ce1">CommandType::Command</a>, std::string name = std::string()): type(type), name(name) {}</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="command_8h.html#af440243e21c9fca9c29a5dec4d7e633f">   31</a></span>&#160;<span class="keyword">using</span> <a class="code" href="command_8h.html#af440243e21c9fca9c29a5dec4d7e633f">Commands</a> = std::vector&lt;Command&gt;;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structCommandListener.html">   36</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structCommandListener.html">CommandListener</a> {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="structCommandListener.html">CommandListener</a>() = <span class="keywordflow">default</span>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> update(<span class="keyword">const</span> std::time_t &amp;time, <span class="keyword">const</span> <a class="code" href="command_8h.html#af440243e21c9fca9c29a5dec4d7e633f">Commands</a> &amp;commands) = 0;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div><div class="ttc" id="command_8h_html_af440243e21c9fca9c29a5dec4d7e633f"><div class="ttname"><a href="command_8h.html#af440243e21c9fca9c29a5dec4d7e633f">Commands</a></div><div class="ttdeci">std::vector&lt; Command &gt; Commands</div><div class="ttdef"><b>Definition:</b> command.h:31</div></div>
+<div class="ttc" id="command_8h_html_a21e038f5b8958e203d28bc4f18472352"><div class="ttname"><a href="command_8h.html#a21e038f5b8958e203d28bc4f18472352">CommandType</a></div><div class="ttdeci">CommandType</div><div class="ttdoc">Тип команды </div><div class="ttdef"><b>Definition:</b> command.h:15</div></div>
+<div class="ttc" id="structCommand_html_afd23b7e189739dbae6c0f2e93ba02c81"><div class="ttname"><a href="structCommand.html#afd23b7e189739dbae6c0f2e93ba02c81">Command::type</a></div><div class="ttdeci">CommandType type</div><div class="ttdef"><b>Definition:</b> command.h:26</div></div>
+<div class="ttc" id="structCommand_html"><div class="ttname"><a href="structCommand.html">Command</a></div><div class="ttdoc">Контейнер для команды </div><div class="ttdef"><b>Definition:</b> command.h:25</div></div>
+<div class="ttc" id="command_8h_html_a21e038f5b8958e203d28bc4f18472352a83db51dfd13d30c9dbc6482b8dc21049"><div class="ttname"><a href="command_8h.html#a21e038f5b8958e203d28bc4f18472352a83db51dfd13d30c9dbc6482b8dc21049">CommandType::FinishBracket</a></div></div>
+<div class="ttc" id="command_8h_html_a21e038f5b8958e203d28bc4f18472352aee97be03cb04119af45014d815621ce1"><div class="ttname"><a href="command_8h.html#a21e038f5b8958e203d28bc4f18472352aee97be03cb04119af45014d815621ce1">CommandType::Command</a></div></div>
+<div class="ttc" id="structCommand_html_ad1b8a0f70bd4e619a4a6aeef84868dac"><div class="ttname"><a href="structCommand.html#ad1b8a0f70bd4e619a4a6aeef84868dac">Command::Command</a></div><div class="ttdeci">Command(CommandType type=CommandType::Command, std::string name=std::string())</div><div class="ttdef"><b>Definition:</b> command.h:28</div></div>
+<div class="ttc" id="structCommand_html_a8d66550a9895cbd96373a9a221fa2b25"><div class="ttname"><a href="structCommand.html#a8d66550a9895cbd96373a9a221fa2b25">Command::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> command.h:27</div></div>
+<div class="ttc" id="command_8h_html_a21e038f5b8958e203d28bc4f18472352abf3db33368c5d60a27dce0e4fd5b2965"><div class="ttname"><a href="command_8h.html#a21e038f5b8958e203d28bc4f18472352abf3db33368c5d60a27dce0e4fd5b2965">CommandType::StartBracket</a></div></div>
+<div class="ttc" id="command_8h_html_a21e038f5b8958e203d28bc4f18472352a87557f11575c0ad78e4e28abedc13b6e"><div class="ttname"><a href="command_8h.html#a21e038f5b8958e203d28bc4f18472352a87557f11575c0ad78e4e28abedc13b6e">CommandType::End</a></div></div>
+<div class="ttc" id="structCommandListener_html"><div class="ttname"><a href="structCommandListener.html">CommandListener</a></div><div class="ttdoc">Интерфейс для классов принимающих список команд </div><div class="ttdef"><b>Definition:</b> command.h:36</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<map id="CommandListener" name="CommandListener">
+<area shape="rect" id="node2" href="$classConsoleListener.html" title="Класс вывода команд в стандартный поток " alt="" coords="5,80,129,107"/>
+<area shape="rect" id="node3" href="$classFileListener.html" title="Класс записи команд в файл " alt="" coords="154,80,247,107"/>
+</map>

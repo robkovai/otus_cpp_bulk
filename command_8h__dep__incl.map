@@ -1,0 +1,8 @@
+<map id="command.h" name="command.h">
+<area shape="rect" id="node2" href="$bulk_8h.html" title="Главный модуль для работы с командами " alt="" coords="177,80,237,107"/>
+<area shape="rect" id="node5" href="$command__reader_8h.html" title="Модуль для чтения команд из стандартного потока ввода " alt="" coords="5,80,152,107"/>
+<area shape="rect" id="node6" href="$console__listener_8h.html" title="Модуль вывода команд в стандартный поток " alt="" coords="261,80,397,107"/>
+<area shape="rect" id="node7" href="$file__listener_8h.html" title="Модуль для записи команд в файл " alt="" coords="421,80,526,107"/>
+<area shape="rect" id="node3" href="$bulk_8cpp.html" title="Реализация главного модуля для работы с командами " alt="" coords="105,155,180,181"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="Основной файл программы " alt="" coords="289,155,370,181"/>
+</map>
